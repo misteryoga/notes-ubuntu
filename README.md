@@ -13,3 +13,9 @@ groups yoganugraha
 id www-data
 groups www-data
 ```
+
+## rsync
+rsync -avL --progress -e "ssh -i ~/Documents/yoga.pem" ~/path-file-or-folder-to-copy ubuntu@xx.xxx.x.xxx:/path-folder-on-server
+
+## certbot
+sudo certbot --installer nginx --authenticator webroot -d app-yoga.34.220.1.94.sslip.io --webroot-path /home/ubuntu/app-yoga/
